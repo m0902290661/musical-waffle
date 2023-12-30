@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacBook Air M1 芯片介紹</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+
+        .slide {
+            display: none;
+            text-align: center;
+            padding: 2em;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .macbook-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide" style="display: block;">
+        <h1>探索 MacBook Air M1</h1>
+        <p>帶您深入了解 Apple 的創新芯片技術</p>
+    </div>
+
+    <div class="slide">
+        <h2>Apple M1 芯片</h2>
+        <p>MacBook Air 搭載了 Apple 自家設計的 M1 芯片，是 Mac 上的巨大飛躍。</p>
+        <p>M1 芯片的卓越性能和能效使 MacBook Air 成為移動工作的理想選擇。</p>
+    </div>
+
+    <div class="slide">
+        <h2>主要技術規格</h2>
+        <ul>
+            <li><strong>CPU：</strong> 八核心 Apple CPU，提供極速處理和流暢運行。</li>
+            <li><strong>GPU：</strong> 強大且高效的八核心 GPU，呈現令人驚嘆的圖形效果。</li>
+            <li><strong>儲存：</strong> 快速的固態硬盤，加速應用程序的加載速度。</li>
+            <li><strong>能效：</strong> 獨特的能效設計，長效的電池續航力。</li>
+            <li><strong>操作系統：</strong> 最新的 macOS，與 Apple 生態系統完美結合。</li>
+        </ul>
+    </div>
+
+    <div class="slide">
+        <h2>應用場景</h2>
+        <p>MacBook Air M1 適用於各種用途，包括：</p>
+        <ul>
+            <li>專業的內容創建，如圖形設計和影片剪輯。</li>
+            <li>輕量化遊戲和娛樂。</li>
+            <li>商務應用程序，提供高效的辦公體驗。</li>
+            <li>日常任務，如瀏覽網頁、郵件和社交媒體。</li>
+        </ul>
+    </div>
+
+    <div class="slide">
+        <img class="macbook-image" src="mac m1.png" alt="MacBook Air M1 芯片">
+    </div>
+
+    <div class="slide">
+        <h2>客戶評價</h2>
+        <p>"使用 MacBook Air M1 讓我的工作變得輕鬆自在。令人驚訝的性能和輕巧的設計是我選擇它的原因。"</p>
+        <p>"M1 芯片真的改變了遊戲規則。我能夠順暢運行多個應用程序，而且電池持久力驚人。"</p>
+    </div>
+
+    <div class="slide">
+        <h2>本網站由許元洧製作</h2>
+        <p>MacBook我真的超級推薦</p>
+        <p>不管是m1、2、3都很好，重點就是太貴了...</p>
+    </div>
+
+    <button class="prev" onclick="plusSlides(-1)">上一頁</button>
+    <button class="next" onclick="plusSlides(1)">下一頁</button>
+
+    <script>
+        let slideIndex = 0;
+        showSlides(slideIndex);
+
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[n].style.display = "block";
+        }
+
+        function plusSlides(n) {
+            slideIndex += n;
+            if (slideIndex < 0) {
+                slideIndex = document.getElementsByClassName("slide").length - 1;
+            } else if (slideIndex >= document.getElementsByClassName("slide").length) {
+                slideIndex = 0;
+            }
+            showSlides(slideIndex);
+        }
+    </script>
+</body>
+</html>
